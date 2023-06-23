@@ -6,6 +6,7 @@ git credentialsId: 'gitHubCredentials', url: 'https://github.com/Matt-Audu/maven
 stage('2MavenBuild'){
 sh "${mavenHome}/bin/mvn package"
 }
+/*
 stage('3codeQuality'){
 sh "${mavenHome}/bin/mvn sonar:sonar"
 }
@@ -30,4 +31,5 @@ Build is done.
 
 LANDMARKTECH''', recipientProviders: [developers(), contributor(), upstreamDevelopers()], subject: 'Build Status', to: 'simplymailmatthew@yahoo.com.com'
 }
+*/
 }
